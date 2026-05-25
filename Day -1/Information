@@ -1,0 +1,20 @@
+Welcome to Day 1 of my Python learning journey.
+
+This folder contains the core concepts of Python programming, including variables, data types, user input, conditions, loops, functions, lists, and mini projects. These concepts form the foundation for advanced topics such as automation, cybersecurity scripting, data science, and web development.
+
+## Topics Covered
+
+- Variables
+- Data Types
+- User Input and Output
+- Conditional Statements
+- Loops
+- Functions
+- Lists
+- Password Strength Checker
+- Student Grade Calculator
+- Cyber Security Tool Menu
+
+## Learning Outcome
+
+By completing Day 1, I learned how to write basic Python programs, take user input, make decisions using conditions, repeat tasks using loops, create reusable functions, and work with lists.
