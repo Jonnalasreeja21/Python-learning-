@@ -1,0 +1,250 @@
+# Python File Handling
+
+## What is File Handling?
+
+File handling in Python allows us to:
+
+- Create files
+- Read files
+- Write data to files
+- Update files
+- Delete files
+
+Files help store data permanently.
+
+---
+
+# Opening a File
+
+Syntax:
+
+```python
+file = open("filename.txt", "mode")
+```
+
+Example:
+
+```python
+file = open("sample.txt", "r")
+```
+
+---
+
+# File Modes
+
+| Mode | Description |
+|--------|------------|
+| r | Read file |
+| w | Write file (overwrites existing content) |
+| a | Append data to file |
+| x | Create a new file |
+| rb | Read binary file |
+| wb | Write binary file |
+
+---
+
+# Reading Files
+
+## Read Entire File
+
+```python
+file = open("sample.txt", "r")
+print(file.read())
+file.close()
+```
+
+Output:
+
+```
+Hello World
+Welcome to Python
+```
+
+---
+
+## Read One Line
+
+```python
+file = open("sample.txt", "r")
+print(file.readline())
+file.close()
+```
+
+---
+
+## Read All Lines
+
+```python
+file = open("sample.txt", "r")
+print(file.readlines())
+file.close()
+```
+
+---
+
+# Writing to a File
+
+```python
+file = open("sample.txt", "w")
+file.write("Hello Python")
+file.close()
+```
+
+Note:
+
+- Creates file if it doesn't exist.
+- Removes old content.
+
+---
+
+# Appending Data
+
+```python
+file = open("sample.txt", "a")
+file.write("\nLearning File Handling")
+file.close()
+```
+
+Output:
+
+```
+Hello Python
+Learning File Handling
+```
+
+---
+
+# Creating a New File
+
+```python
+file = open("newfile.txt", "x")
+file.close()
+```
+
+---
+
+# Using with Statement
+
+Best practice:
+
+```python
+with open("sample.txt", "r") as file:
+    data = file.read()
+    print(data)
+```
+
+Advantages:
+
+- Automatically closes file
+- Cleaner code
+- Safer
+
+---
+
+# File Closing
+
+```python
+file.close()
+```
+
+Why?
+
+- Frees system resources
+- Prevents data corruption
+
+---
+
+# Deleting a File
+
+```python
+import os
+
+os.remove("sample.txt")
+```
+
+Check before deleting:
+
+```python
+import os
+
+if os.path.exists("sample.txt"):
+    os.remove("sample.txt")
+else:
+    print("File not found")
+```
+
+---
+
+# Exception Handling
+
+```python
+try:
+    file = open("sample.txt", "r")
+    print(file.read())
+except FileNotFoundError:
+    print("File does not exist")
+```
+
+---
+
+# Mini Project: Notes Saver
+
+```python
+note = input("Enter your note: ")
+
+with open("notes.txt", "a") as file:
+    file.write(note + "\n")
+
+print("Note saved successfully!")
+```
+
+---
+
+# Interview Questions
+
+## What is file handling?
+
+File handling is the process of creating, reading, writing, and managing files in a program.
+
+## Difference between write() and append()?
+
+| write() | append() |
+|----------|----------|
+| Overwrites existing content | Adds content at the end |
+
+## Why use with open()?
+
+It automatically closes the file and prevents resource leaks.
+
+## What is FileNotFoundError?
+
+An exception raised when a file does not exist.
+
+---
+
+# Important Commands
+
+```python
+open()
+read()
+readline()
+readlines()
+write()
+close()
+os.remove()
+os.path.exists()
+```
+
+---
+
+# Summary
+
+Python File Handling helps store and manage data in files. Common operations include:
+
+- Read
+- Write
+- Append
+- Create
+- Delete
+
+Using `with open()` is the recommended and safest way to work with files.
