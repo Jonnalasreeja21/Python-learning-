@@ -1,18 +1,25 @@
-# Python Fundamentals for Beginners
+# 🐍 Python Learning Repository
 
-This repository contains my Python learning journey and practice programs. It covers essential programming concepts such as variables, data types, user input, conditional statements, loops, functions, lists, and beginner-friendly mini projects.
+## 📌 Overview
+Core Python programming concepts with practice programs and mini projects.
 
-## Topics Covered
-- Variables and Data Types
-- Input and Output
-- Conditional Statements
+---
+
+## 📚 Topics
+- Variables
 - Loops
 - Functions
 - Lists
-- Password Strength Checker
-- Student Grade Calculator
-- Cyber Security Tool Menu
+- Dictionaries
 
-## Goal
-To build a strong foundation in Python programming and prepare for advanced topics such as automation, cybersecurity, data science, and web development.# Python-learning-
-This repository contains Python fundamentals for beginners, including variables, data types, user input, conditional statements, loops, functions, lists, and basic mini projects. The goal is to build a strong foundation in Python programming through hands-on examples and practice exercises.
+---
+
+## 💡 Mini Projects
+- Calculator
+- Basic automation scripts
+- Practice problems
+
+---
+
+## 🎯 Goal
+Build strong programming foundation for cybersecurity and backend development.
